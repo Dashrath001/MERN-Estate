@@ -37,7 +37,7 @@ const handleSubmit= async(e) =>{
     }
     setLoading(false);
     setError(null);
-    navigate('/sign-in');
+    navigate('/signin');
   }
   catch(error){
     setLoading(false);
@@ -63,8 +63,8 @@ const handleSubmit= async(e) =>{
       </form>
       <div className="flex gap-2 mt-5">
         <p>Have a account?</p>
-        <Link to={"/sign-in"}>
-          <span className="text-blue-700">Sign in</span>
+        <Link to={"/signIn"}>
+          <span className="text-blue-700">Sign In</span>
         </Link>
       </div>
       {error && <p className='text-red-500 mt-5'>{error}</p>}
